@@ -1,0 +1,30 @@
+.container {
+    /* käytin remiä koska se on toimii paremmin responsiivisessa sivussa*/
+    width: 59.375rem; /* tämä on 950 px*/
+    height: 43.75rem; /* tämä on 700px*/
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 auto;
+    overflow: hidden;
+    font-size: small;
+    background-image: url("../images/Pelin-tausta.png");
+}
+
+.lumpeenlehti {
+    width: 130px;
+    height: 139px;
+    background-image: url('');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.kirjain {
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}

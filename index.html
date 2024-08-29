@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Suomen Aakkoset</title>
+    <link rel="stylesheet" href="styles/start.page.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Finnish alphabet game">
+    <meta name="keywords" content="Finnish alphabet, Finnish alphabet game, mosaiikki ry">
+</head>
+
+<body>
+    <div class="container">
+        <section id="start-screen">
+            <h1 id="title">Suomen Aakkoset</h1>
+
+            <div id="instruction-modal" class="modal">
+                <p id="instructions">Jäjestä lumpeenlehdet aakkosjärjestykseen vaihtaen niiden paikkaa hiirellä</p>
+                <button id="start-button">Pelaa</button>
+            </div>
+
+            <div class="lumpeenlehti" id="lumpeenlehti-1" data-letter="A">
+                <span class="kirjain"></span>
+            </div>
+
+            <div class="lumpeenlehti" id="lumpeenlehti-2" data-letter="B">
+                <span class="kirjain"></span>
+            </div>
+
+        </section>
+
+        <section id="page-a-e">
+
+        </section>
+       
+    </div>
+    
+    <script src="scripts/main.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/events.js"></script>
+    <script src="scripts/animations.js"></script>
+</body>
+</html>
