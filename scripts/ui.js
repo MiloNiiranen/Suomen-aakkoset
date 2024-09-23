@@ -8,7 +8,7 @@ function showSection(sectionId) {
 }
 
 document.getElementById('start-button').addEventListener('click', function() {
-    showSection("page-a-e");
+    showSection("game-ending");
     shuffleLeaves();  // Randomoi lehdet ensimmäisellä sivulla
 });
 

@@ -40,6 +40,8 @@
     width: 55%; /* Kuvan leveys 100% */
     height: 73%; /* Kuvan korkeus 100% */
     object-fit: cover; /* Säilyttää kuvasuhteen */
+    position: absolute;
+    right: 28rem;
 }
 
 @keyframes playAnimation {
