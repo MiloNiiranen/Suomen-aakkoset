@@ -8,7 +8,14 @@
     padding: 0 auto;
     overflow: hidden;
     font-size: small;
-    background-image: url("../images/Pelin-tausta.png");
+    
+}
+
+section {
+    width: 59.375rem; /* tämä on 950 px*/
+    height: 43.75rem; /* tämä on 700px*/
+    background-size: cover;
+    background-position: center;
 }
 
 .lumpeenlehti {
@@ -21,6 +28,25 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: left 0.5s ease, top 0.5s ease;
+}
+
+
+
+#lumpeenlehti-toinenversio {
+    background-image: url('../images/lumpeenlehti-toinenversio.png');
+}
+
+#lumpeenlehti-toinenversio .kirjain {
+    top: 30%;
+}
+
+#lempeenlehti-kolmasversio {
+    background-image: url('../images/lumpeenlehti-kolmasversio.png');
+}
+
+#lempeenlehti-kolmasversio .kirjain {
+    top: 25%;
 }
 
 .kirjain {
@@ -41,9 +67,37 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid black; /* Reunaviiva, jotta näet containerin koon */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+
+#page-a-e  {
+    background-image: url("../images/tausta-auringolla.png");
+}
+
+#page-f-j  {
+    background-image: url("../images/tausta-auringolla.png");
+}
+
+#page-k-o {
+    background-image: url("../images/Pelin-tausta.png");
+}
+
+#page-p-t {
+    background-image: url("../images/Pelin-tausta.png");
+}
+
+#page-u-y {
+    background-image: url("../images/Pelin-tausta.png");
+}
+
+#page-z-ö {
+    background-image: url("../images/taustan-yö-versio.png");
+}
+
+
+

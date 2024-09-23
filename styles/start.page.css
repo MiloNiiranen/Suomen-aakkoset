@@ -57,3 +57,6 @@
     color: #10015f;
 }
 
+#start-screen {
+    background-image: url("../images/tausta-auringolla.png");
+}

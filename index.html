@@ -4,6 +4,8 @@
     <title>Suomen Aakkoset</title>
     <link rel="stylesheet" href="styles/start.page.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/game-ending.css">
+    <link rel="stylesheet" href="styles/akrikola.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Finnish alphabet game">
@@ -23,13 +25,14 @@
         </section>
 
         <section id="page-a-e" style="display: none;">
+
             <div class="letter-container">
 
                 <div class="lumpeenlehti" data-letter="A">
                     <span class="kirjain">A</span>
                 </div>
 
-                <div class="lumpeenlehti" data-letter="B">
+                <div class="lumpeenlehti" id="lumpeenlehti-toinenversio" data-letter="B">
                     <span class="kirjain">B</span>
                 </div>
 
@@ -37,11 +40,11 @@
                     <span class="kirjain">C</span>
                 </div>
 
-                <div class="lumpeenlehti" data-letter="D">
+                <div class="lumpeenlehti" id="lumpeenlehti-toinenversio" data-letter="D">
                     <span class="kirjain">D</span>
                 </div>
 
-                <div class="lumpeenlehti" data-letter="E">
+                <div class="lumpeenlehti" id="lempeenlehti-kolmasversio" data-letter="E">
                     <span class="kirjain">E</span>
                 </div>
 
@@ -50,17 +53,18 @@
         </section>
 
         <section id="page-f-j" style="display: none;">
+
             <div class="letter-container">
 
                 <div class="lumpeenlehti" data-letter="F">
                     <span class="kirjain">F</span>
                 </div>
 
-                <div class="lumpeenlehti" data-letter="G">
+                <div class="lumpeenlehti" id="lumpeenlehti-toinenversio" data-letter="G">
                     <span class="kirjain">G</span>
                 </div>
 
-                <div class="lumpeenlehti" data-letter="H">
+                <div class="lumpeenlehti"  id="lempeenlehti-kolmasversio" data-letter="H">
                     <span class="kirjain">H</span>
                 </div>
 
@@ -74,6 +78,155 @@
 
             </div>
 
+        </section>
+
+        <section id="page-k-o" style="display: none;">
+
+            <div class="letter-container">
+
+                <div class="lumpeenlehti"  id="lempeenlehti-kolmasversio" data-letter="K">
+                    <span class="kirjain">K</span>
+                </div>
+
+                <div class="lumpeenlehti" data-letter="L">
+                    <span class="kirjain">L</span>
+                </div>
+
+                <div class="lumpeenlehti"  id="lumpeenlehti-toinenversio" data-letter="M">
+                    <span class="kirjain">M</span>
+                </div>
+
+                <div class="lumpeenlehti"  id="lumpeenlehti-toinenversio" data-letter="N">
+                    <span class="kirjain">N</span>
+                </div>
+
+                <div class="lumpeenlehti" id="lumpeenlehti-toinenversio" data-letter="O">
+                    <span class="kirjain">O</span>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section id="page-p-t" style="display: none;">
+
+            <div class="letter-container">
+
+                <div class="lumpeenlehti" data-letter="P">
+                    <span class="kirjain">P</span>
+                </div>
+
+                <div class="lumpeenlehti" id="lempeenlehti-kolmasversio" data-letter="Q">
+                    <span class="kirjain">Q</span>
+                </div>
+
+                <div class="lumpeenlehti" id="lempeenlehti-kolmasversio" data-letter="R">
+                    <span class="kirjain">R</span>
+                </div>
+
+                <div class="lumpeenlehti" data-letter="S">
+                    <span class="kirjain">S</span>
+                </div>
+
+                <div class="lumpeenlehti" id="lempeenlehti-kolmasversio" data-letter="T">
+                    <span class="kirjain">T</span>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section id="page-u-y" style="display: none;">
+
+            <div class="letter-container">
+
+                <div class="lumpeenlehti" data-letter="U">
+                    <span class="kirjain">U</span>
+                </div>
+
+                <div class="lumpeenlehti" data-letter="V">
+                    <span class="kirjain">V</span>
+                </div>
+
+                <div class="lumpeenlehti" data-letter="W">
+                    <span class="kirjain">W</span>
+                </div>
+
+                <div class="lumpeenlehti" data-letter="X">
+                    <span class="kirjain">X</span>
+                </div>
+
+                <div class="lumpeenlehti"  id="lumpeenlehti-toinenversio" data-letter="Y">
+                    <span class="kirjain">Y</span>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section id="page-z-ö" style="display: none;">
+
+            <div class="letter-container">
+
+                <div class="lumpeenlehti"  id="lumpeenlehti-toinenversio" data-letter="Y">
+                    <span class="kirjain">Y</span>
+                </div>
+
+                <div class="lumpeenlehti" data-letter="Z">
+                    <span class="kirjain">Z</span>
+                </div>
+
+                <div class="lumpeenlehti" id="lempeenlehti-kolmasversio" data-letter="Å">
+                    <span class="kirjain">Å</span>
+                </div>
+
+                <div class="lumpeenlehti" data-letter="Ä">
+                    <span class="kirjain">Ä</span>
+                </div>
+
+                <div class="lumpeenlehti" id="lempeenlehti-kolmasversio" data-letter="Ö">
+                    <span class="kirjain">Ö</span>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section id="game-ending" style="display: none;">
+
+            <div id="game-ending-animation">
+                <img src="./images/giphy.webp" alt="Game Ending Animation" />
+            </div>
+
+            <h1 id="good-job">Hyvin tehty</h1>
+
+        </section>
+
+        <section id="akrikola" style="display: none;">
+            <h1 id="akrikola-title">Mikael Agricola</h1>
+            <h2 id="title-text">Suomen Kirjakielen Isä</h2>
+
+            <h1 id="introduction">Johdanto</h1>
+            <p id="introduction-text">Mikael Agricola (1510–1557) oli suomalainen pappi, kääntäjä ja kirjailija, joka tunnetaan erityisesti suomen kirjakielen perustajana. 
+                Hänen työnsä Raamatun kääntämisessä suomeksi sekä ensimmäisten suomenkielisten kirjojen julkaiseminen ovat jättäneet pysyvän jäljen suomalaisen kulttuurin ja kielen kehitykseen. Agricolan panos oli merkittävä myös uskonpuhdistuksen aikana, ja hänen työnsä vaikutukset näkyvät vielä nykyäänkin.
+            </p>
+
+            <h1 id="early-stages">Varhaiset Vaiheet</h1>
+            <p id="early-stages-text">
+                Mikael Agricola syntyi noin vuonna 1510 Pernajassa. Hänen varhaisista vuosistaan tiedetään vähän, mutta hän lähti nuorena opiskelemaan Viipuriin, missä hän sai vaikutteita katolisesta kirkosta ja alkoi kiinnostua kirjallisuudesta. Agricolan opiskelut jatkuivat Turussa, missä hänestä tuli Martinus Skytte -nimisen piispan sihteeri.
+                Myöhemmin Agricola lähetettiin Saksaan Wittenbergiin opiskelemaan teologiaa ja uskonpuhdistusta kuuluisan Martti Lutherin johdolla. Wittenbergissä Agricola sai vahvan uskonnollisen ja akateemisen pohjan, mikä vaikutti hänen tulevaan työhönsä Suomessa.
+            </p>
+
+            <h1 id="atchiements">Agricolan Saavutukset</h1>
+            <ul id="atchiements-list">
+                <li>Suomen kirjakielen luominen</li>
+                <li>Testamentin käännös suomeksi.</li>
+                <li>ABC-kirja (1543): Suomen ensimmäinen aapinen ja oppikirja.</li>
+                <li>Rukouskirja (1544): Sisälsi kirkollisia rukouksia ja jumalanpalvelusjärjestyksiä suomeksi.</li>
+            </ul>
+              <p id="atchiements-text">Näillä teoksilla Agricola ei ainoastaan edistänyt suomenkielistä kirjallisuutta, vaan myös levitti uskonpuhdistuksen periaatteita Suomeen.</p>
+
+            <img src="./images/mikael_agricola_mikael.jpg"  id="mikael-agricola-kuva">
         </section>
        
     </div>

@@ -1,0 +1,51 @@
+#good-job {
+    font-size: 80px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Tekstin väri */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), /* Vaalea varjo */
+                 0px 0px 30px rgba(0, 0, 255, 0.4), /* Sininen varjo */
+                 0px 0px 60px rgba(0, 0, 255, 0.2), /* Laajempi sininen varjo */
+                 1px 1px 2px rgba(0, 0, 0, 0.7), /* Mustat ääriviivat */
+                 -1px -1px 2px rgba(0, 0, 0, 0.7), /* Mustat ääriviivat */
+                 1px -1px 2px rgba(0, 0, 0, 0.7), /* Mustat ääriviivat */
+                 -1px 1px 2px rgba(0, 0, 0, 0.7); /* Mustat ääriviivat */
+}
+
+#background-image {
+    position: fixed; /* Käytä fixed-asetusta, jotta kuva pysyy paikallaan, vaikka käyttäjä vierittää sivua */
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 70%;
+    object-fit: cover; /* Varmistaa, että kuva täyttää koko alueen säilyttäen kuvasuhteen */
+    z-index: 0; /* Varmistaa, että kuva on taustalla */
+}
+
+#game-ending-animation {
+    position: fixed; /* Käytä fixed-asetusta, jotta animaatio pysyy paikallaan */
+    top: 0; /* Aseta yläreuna nollaksi */
+    left: 0; /* Aseta vasen reuna nollaksi */
+    width: 100%; /* Täytä koko leveys */
+    height: 100%; /* Täytä koko korkeus */
+    overflow: hidden; /* Piilota ylimääräinen sisältö */
+    z-index: 999; /* Varmistaa, että se on päällimmäisenä */
+    animation: playAnimation 2.4s forwards; /* Esimerkki animaatiosta */
+}
+
+#game-ending-animation img {
+    width: 55%; /* Kuvan leveys 100% */
+    height: 73%; /* Kuvan korkeus 100% */
+    object-fit: cover; /* Säilyttää kuvasuhteen */
+}
+
+@keyframes playAnimation {
+    /* Animaation määrittelyt */
+}
+
+#game-ending {
+    background-image: url("../images/taustan-yö-versio.png");
+}
