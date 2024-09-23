@@ -37,11 +37,13 @@
 }
 
 #game-ending-animation img {
-    width: 55%; /* Kuvan leveys 100% */
-    height: 73%; /* Kuvan korkeus 100% */
-    object-fit: cover; /* Säilyttää kuvasuhteen */
+    width: 60%; /* Kuvan leveys 100% */
+    height: auto; /* Korkeus automaattisesti */
+    object-fit: cover; 
     position: absolute;
-    right: 28rem;
+    top: 50%; /* Keskittää pystysuunnassa */
+    left: 50%; /* Keskittää vaakasuunnassa */
+    transform: translate(-50%, -50%); /* Keskittää täydellisesti */
 }
 
 @keyframes playAnimation {
