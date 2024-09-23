@@ -26,24 +26,26 @@
 }
 
 #game-ending-animation {
-    position: fixed; /* Käytä fixed-asetusta, jotta animaatio pysyy paikallaan */
-    top: 0; /* Aseta yläreuna nollaksi */
-    left: 0; /* Aseta vasen reuna nollaksi */
-    width: 100%; /* Täytä koko leveys */
-    height: 100%; /* Täytä koko korkeus */
-    overflow: hidden; /* Piilota ylimääräinen sisältö */
-    z-index: 999; /* Varmistaa, että se on päällimmäisenä */
-    animation: playAnimation 2.4s forwards; /* Esimerkki animaatiosta */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 999;
 }
 
 #game-ending-animation img {
-    width: 60%; /* Kuvan leveys 100% */
-    height: auto; /* Kuvan korkeus 100% */
-    object-fit: cover; /* Säilyttää kuvasuhteen */
+    width: 90vw; /* Increased width beyond 100% */
+    height: 90vh; /* Increased height beyond 100% */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
     position: absolute;
-    right: 25rem;
-    top: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+
 
 @keyframes playAnimation {
     /* Animaation määrittelyt */
