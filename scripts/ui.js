@@ -8,7 +8,7 @@ function showSection(sectionId) {
 }
 
 document.getElementById('start-button').addEventListener('click', function() {
-    showSection("akrikola");
+    showSection("page-a-e");
     shuffleLeaves();  // Randomoi lehdet ensimmäisellä sivulla
 });
 
