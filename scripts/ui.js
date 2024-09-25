@@ -8,7 +8,7 @@ function showSection(sectionId) {
 }
 
 document.getElementById('start-button').addEventListener('click', function() {
-    showSection("page-a-e");
+    showSection("akrikola");
     shuffleLeaves();  // Randomoi lehdet ensimmäisellä sivulla
 });
 
@@ -51,4 +51,8 @@ function goToNextPage() {
         }
     }
 }
+
+document.getElementById('endgame-button').addEventListener('click', function() {
+    showSection("start-screen");
+});
 

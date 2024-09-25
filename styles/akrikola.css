@@ -102,3 +102,25 @@
     top: 2rem; /* Siirretty ylemmäksi */
 }
 
+#endgame-button {
+
+    position: absolute;
+    left: 41rem;
+    top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background: red;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset rgba(10, 10, 10, .5) -2px -2px 0px, inset rgba(255, 255, 255, .8) 2.5px 2.5px 3px, rgba(10, 10, 10, .8) 0px 2px 8px;
+    transition: background-color 0.3s, transform 0.2s ease-out, box-shadow 0.3s ease-out; 
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#endgame-button:hover {
+    box-shadow: inset rgba(10, 10, 10, .5) -2px -2px 0px, inset rgba(255, 255, 255, 0) 3px 3px 0px, rgba(10, 10, 10, .8) 0px 1px 10px -3px;
+}
