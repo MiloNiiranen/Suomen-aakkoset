@@ -1,7 +1,7 @@
 .container {
     /* käytin remiä koska se on toimii paremmin responsiivisessa sivussa*/
-    width: 59.375rem; /* tämä on 950 px*/
-    height: 43.75rem; /* tämä on 700px*/
+    width: 43.75rem; /* 700 px */
+    height: 40.625rem; /* 650 px */
     text-align: center;
     position: relative;
     margin: 0 auto;
@@ -12,15 +12,15 @@
 }
 
 section {
-    width: 59.375rem; /* tämä on 950 px*/
-    height: 43.75rem; /* tämä on 700px*/
+    width: 43.75rem; /* 700 px */
+    height: 40.625rem; /* 650 px */
     background-size: cover;
     background-position: center;
 }
 
 .lumpeenlehti {
-    width: 130px;
-    height: 139px;
+    width: 95px; /* Mukautettu koko suhteessa containerin kokoon */
+    height: 100px;
     background-image: url('../images/lumpeenlehti.png');
     cursor: pointer;
     user-select: none;
@@ -53,17 +53,17 @@ section {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-weight: 700;
     position: absolute;
-    top: 32%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 4rem;
+    font-size: 3rem;
     color: #0f4908af;
     text-shadow: 3px 2px 3px rgba(255,255,255,.2), 2px 2px 2px rgba(206,89,55,0);
 }
 
 .letter-container {
     width: 99%;
-    height: 150px;
+    height: 110px; /* Mukautettu korkeus */
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -3,100 +3,102 @@
 }
 
 #akrikola-title {
-    font-size: 38px;
+    font-size: 1.8rem; /* Skaalattu suhteessa uuteen kokoon */
     position: absolute;
-    bottom: 37.5rem;
-    left: 27.5rem;
+    bottom: 35.5rem; /* Sijoitus suhteutettuna containerin korkeuteen */
+    left: 20rem; /* Sovitettu pienempään leveyteen */
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #630000;
 }
 
 #title-text {
     position: absolute;
-    left: 30rem;
-    top: 3rem;
-    font-size: 23px;
+    left: 21rem; /* Siirretty vasemmalle uuteen tilaan */
+    top: 2.5rem; /* Ylemmäs pienempään tilaan */
+    font-size: 1.2rem; /* Skaalattu fonttikoko */
     color: #630000;
 }
 
 #introduction {
-    font-size: 32px;
+    font-size: 1.6rem; /* Skaalattu pienemmäksi */
     position: absolute;
-    left: 27.5rem;
-    top: 6.5rem;
+    left: 20rem; /* Sovitettu vasemmalle */
+    top: 6rem; /* Siirretty ylemmäs */
     color: #630000;
 }
 
 #introduction-text {
     position: absolute;
-    left: 26rem;
-    top: 10rem;
-    text-align: left; /* Tekstin tasaus vasemmalle */
-    font-size: 18px;
+    left: 19.5rem; /* Siirretty vasemmalle */
+    top: 9rem; /* Sovitettu ylemmäksi */
+    text-align: left;
+    font-size: 1rem; /* Skaalattu pienemmäksi */
     font-weight: bold;
-    margin: 25px;
+    margin: 10px;
     color: #333333;
 }
 
 #early-stages {
-    font-size: 32px;
+    font-size: 1.6rem; /* Skaalattu pienemmäksi */
     position: absolute;
-    left: 27.5rem;
-    top: 22.5rem;
+    left: 20rem; /* Sovitettu vasemmalle */
+    top: 20rem; /* Siirretty ylemmäksi */
     color: #630000;
 }
 
 #early-stages-text {
     position: absolute;
-    left: 26rem;
-    top: 26rem;
-    text-align: left; /* Tekstin tasaus vasemmalle */
-    font-size: 18px;
+    left: 19.5rem; /* Siirretty vasemmalle */
+    top: 23rem; /* Ylemmäs suhteessa containerin kokoon */
+    text-align: left;
+    font-size: 1rem; /* Skaalattu pienemmäksi */
     font-weight: bold;
-    margin: 25px;
+    margin: 10px;
     color: #333333;
 }
 
 #atchiements {
-    font-size: 32px;
+    font-size: 1.6rem; /* Skaalattu pienemmäksi */
     position: absolute;
-    left: 2.5rem;
-    top: 22.5rem;
+    left: 2rem; /* Sovitettu vasemmalle */
+    top: 18rem; /* Siirretty ylemmäksi */
     color: #630000;
 }
 
 #atchiements-list {
     position: absolute;
-    right: 36rem;
-    top: 26rem;
-    text-align: left; /* Tekstin tasaus vasemmalle */
-    font-size: 18px;
+    right: 24rem; /* Siirretty oikealle uuteen mittasuhteeseen */
+    top: 21rem; /* Siirretty ylemmäs */
+    text-align: left;
+    font-size: 1rem; /* Skaalattu pienemmäksi */
     font-weight: bold;
     color: #333333;
+    max-width: 300px; /* Rajoittaa listan leveyttä, jotta se ei osu muihin elementteihin */
+    word-wrap: break-word;
     
 }
 
 #atchiements-list li {
-    margin-bottom: 4px; /* Lisää tilaa jokaisen listan kohdan väliin */
+    margin-bottom: 4px; /* Pienempi marginaali listakohdille */
 }
 
 #atchiements-text {
     position: absolute;
-    left: 2rem;
-    top: 36.5rem;
-    text-align: left; /* Tekstin tasaus vasemmalle */
-    font-size: 18px;
+    left: 2.5rem; /* Siirretty vasemmalle */
+    top: 31rem; /* Ylemmäksi */
+    text-align: left;
+    font-size: 1rem; /* Skaalattu pienemmäksi */
     font-weight: bold;
     color: #333333;
-    max-width: 400px; /* Rajoittaa leveyttä */
+    max-width: 300px; /* Rajoitettu leveys pienempään containeriin sopivaksi */
 }
 
 
 #mikael-agricola-kuva {
-    width: 350px;
-    height: 350px;
+    width: 260px; /* Pienennetty kuva */
+    height: 260px; /* Pienennetty kuva */
     position: absolute;
-    right: 35rem;
-    top: 2rem;
+    right: 26rem; /* Oikealle sovitettu */
+    top: 2rem; /* Siirretty ylemmäksi */
 }
 

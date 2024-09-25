@@ -1,26 +1,26 @@
 #title {
-    font-size: 50px;
+    font-size: 40px;
     position: absolute;
-    top: 7rem;
-    left: 50%; /* Keskittää vaakasuunnassa */
-    transform: translateX(-50%); /* Siirtää napin keskelle */
+    top: 7.5rem;
+    left: 50%;
+    transform: translateX(-50%);
     color: #FFFFFF;
-    text-shadow: 1px 1px 3px black, /* Musta ääriviiva */0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    text-shadow: 1px 1px 3px black, 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-weight: 700;
    
 }
 
 #start-button{
-    width: 10rem; 
+    width: 8.5rem;
     height: 3.5rem;
     position: absolute;
-    top: 12.3rem;
+    top: 10.5rem;
     left: 50%;
     transform: translateX(-50%);
     background: rgb(230, 169, 0);
     border: 2px solid rgb(255, 115, 0);
-    font-size: 24px;
+    font-size: 23px;
     border-radius: 13px;
     transition: 0.3s ease-in-out;
     box-shadow: #FFF 0 -1px 1px,#ff0 0 -2px 6px, #ff8000 0 -10px 15px, red 0 -3px 25px, 5px 5px 8px 2px rgba(0,0,0,0);
@@ -34,8 +34,8 @@
 }
 
 #instruction-modal{
-    width: 25.938rem;
-    height: 16.875rem;
+    width: 21rem;
+    height: 15rem;
     background-color: #99b9d4;
     position: absolute;
     top: 50%;
@@ -44,17 +44,29 @@
     border-radius: 10px;
     -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 0px 5px rgba(31,122,255,0); 
     box-shadow: inset -1px 2px 3px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 0px 5px rgba(31,122,255,0);
-    
-    
 }
 
 #instructions{
     position: absolute;
-    font-size: 2rem;
+    font-size:  1.7rem;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5), 2px 2px 2px rgba(42,51,59,0);
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     color: #10015f;
+}
+
+#authors {
+    position: absolute;
+    top: 37rem;
+    left: 1rem;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000,  
+        1px 1px 0 #000; /* Mustat ääriviivat */
 }
 
 #start-screen {
