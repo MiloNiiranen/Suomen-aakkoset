@@ -32,7 +32,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    z-index: 999;
+    z-index: 998;
 }
 
 #game-ending-animation img {
@@ -43,13 +43,59 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: playAnimation 9s ease-in-out forwards;
 }
 
 
 
 @keyframes playAnimation {
-    /* Animaation määrittelyt */
+    0% {
+        opacity: 1; /* Alkaa täysin näkyvänä */
+    }
+    50% {
+        opacity: 1; /* Pysyy näkyvänä ensimmäiset 50% ajasta */
+    }
+    65% {
+        opacity: 0; /* Häivy kokonaan aikaisemmin */
+    }
+    100% {
+        opacity: 0; /* Pysyy näkymättömänä lopun ajan */
+    }
 }
+
+#akrikola-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12rem;
+    height: 5rem;
+    font-size: 25px;
+    background-color: #FFFACD; /* Kuunvalkoinen tausta */
+    color: #333333; /* Tumma teksti kontrastina */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 204, 0.8), /* Pehmeä keltainen hohde */
+                0 0 30px rgba(255, 255, 204, 0.6),
+                0 0 60px rgba(255, 255, 255, 0.4),
+                0 0 100px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    text-align: center;
+    line-height: 5rem;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Tumma varjostus tekstille */
+    z-index: 999;
+}
+
+#akrikola-button:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1), 
+                0 0 40px rgba(255, 255, 255, 0.8), 
+                0 0 80px rgba(255, 255, 255, 0.6), 
+                0 0 120px rgba(255, 255, 255, 0.4);
+    color: #FFF; /* Teksti muuttuu valkoiseksi hoverissa */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Jatkuva varjostus hoverissakin */
+}
+
 
 #game-ending {
     background-image: url("../images/taustan-yö-versio.png");

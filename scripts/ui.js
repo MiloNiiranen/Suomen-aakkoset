@@ -36,15 +36,6 @@ function goToNextPage() {
             // Käynnistä animaatio
             const animationElement = document.getElementById('game-ending-animation');
             animationElement.style.animation = 'playAnimation 2.4s forwards';
-
-            // Odota 4 sekuntia ennen siirtymistä akrikola-osioon
-            setTimeout(() => {
-                nextSection.style.display = 'none';
-                const akrikolaSection = document.getElementById('akrikola');
-                if (akrikolaSection) {
-                    akrikolaSection.style.display = 'block';
-                }
-            }, 1700); // Näytä 'akrikola' 4 sekunnin kuluttua
         } else {
             nextSection.style.display = 'block';
             shuffleLeaves();
@@ -54,5 +45,9 @@ function goToNextPage() {
 
 document.getElementById('endgame-button').addEventListener('click', function() {
     showSection("start-screen");
+});
+
+document.getElementById('akrikola-button').addEventListener('click', function() {
+    showSection("akrikola");
 });
 
